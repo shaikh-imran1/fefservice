@@ -27,5 +27,5 @@ phases:
 
 artifacts:
   files:
-    - target\f2fservice-1.0.jar
+    - target/f2fservice-1.0.jar
  
