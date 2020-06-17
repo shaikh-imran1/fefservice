@@ -91,20 +91,20 @@
 
 
 			<!-- Maven Shade Plugin -->
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
 				<version>2.3</version>
-				<executions>
-					<!-- Run shade goal on package phase -->
+				<executions> -->
+					<!-- Run shade goal on package phase --> <!-- 
 					<execution>
 						<phase>package</phase>
 						<goals>
 							<goal>shade</goal>
 						</goals>
 						<configuration>
-							<transformers>
-								<!-- add Main-Class to manifest file -->
+							<transformers> -->
+								<!-- add Main-Class to manifest file --> <!--  
 								<transformer
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 									<mainClass>com.tat.f2fservice.F2fserviceApplication</mainClass>
@@ -113,7 +113,7 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin>  -->
 
 		</plugins>
 	</build>

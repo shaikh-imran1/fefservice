@@ -1,0 +1,31 @@
+version: 0.2
+            
+phases:
+  install:
+    runtime-versions:
+      java : openjdk8
+    commands:
+      - echo install phase
+   
+  pre_build:
+    commands:
+      - echo pre_build phase
+    finally:
+      - echo re_build finally phase
+  build:
+    commands:
+      - mvn package
+      - echo build phase
+    finally:
+      - echo build phase finally
+      
+  post_build:
+    commands:
+      - echo post_build phase
+    finally:
+      - echo finally post_build phase
+
+artifacts:
+  files:
+    - target\f2fservice-1.0.jar
+ 
