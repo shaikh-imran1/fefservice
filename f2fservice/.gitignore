@@ -29,3 +29,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+/target/
+.project
+.classpath
+target
+.settings
